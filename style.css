@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #176b87;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+}
+.content {
+  height: 300px;
+  width: 250px;
+  padding: 25px;
+  color: white;
+}
+.content p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+.content a {
+  color: white;
+}
+.content h1 {
+  font-size: 3rem;
+}
+.img {
+  height: 150px;
+  width: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/Form_CSS/media/image.png);
+}
+.box2 {
+  margin: 10px;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 25px;
+}
+.form {
+  border-radius: 5px;
+  padding: 25px;
+  background-color: #eeeeee;
+}
+.form h1 {
+  padding: 10px;
+}
+input,
+textarea {
+  background-color: #176b87;
+  border: none;
+}
+textarea {
+  border-color: #176b87;
+}
+input[type="submit"] {
+  /* margin: 5px; */
+  padding: 8px;
+  width: 35%;
+  font-size: 20px;
+  border-radius: 20px;
+}
+textarea:hover,
+input:hover {
+  background-color: #eee;
+  border: 2px solid #176b87;
+}
+::placeholder {
+  color: #0d081479;
+}
+@media screen and (max-width: 630px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  .box1 {
+    display: flex;
+  }
+  .img {
+    margin-top: 25px;
+  }
+  .content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .img {
+    display: none;
+  }
+  .content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .form {
+    padding: 10px;
+  }
+  .form h1 {
+    padding: 8px;
+    font-size: 1rem;
+  }
+  .box2 {
+    margin: 5px;
+  }
+  .content h1 {
+    font-size: 2.5rem;
+  }
+  .content {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .content p {
+    font-size: 1rem;
+  }
+  .content h1 {
+    font-size: 1.5rem;
+  }
+}
